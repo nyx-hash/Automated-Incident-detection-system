@@ -4,13 +4,11 @@
   "description": "Real-time network intrusion detection system with machine learning",
   "main": "server/index.js",
   "scripts": {
-    "start": "NODE_ENV=production node dist/server/index.js",
-    "dev": "NODE_ENV=development tsx server/index.ts",
-    "dev:elevated": "sudo npm run dev",
-    "build": "tsc && vite build",
-    "db:push": "drizzle-kit push",
-    "db:studio": "drizzle-kit studio"
-  },
+  "start": "node dist/server/index.js",
+  "dev": "set NODE_ENV=development && tsx server/index.ts",
+  "build": "tsc && vite build",
+  "db:push": "drizzle-kit push"
+}
   "dependencies": {
     "@fontsource/ibm-plex-mono": "^5.0.8",
     "@fontsource/inter": "^5.0.15",
